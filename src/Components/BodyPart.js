@@ -6,7 +6,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
   return (
     <Stack className='bodyPart-card' type='button' alignItems='center' justifyContent='center' 
       sx={{
-         borderTop: bodyPart === item ? '4px solid #ff2625' : '',
+         borderTop: bodyPart === item ? '4px solid var(--primary-color)' : '',
          backgroundColor: '#fff', borderBottomLeftRadius: '20px', width: '270px', height: '280px', gap: '47px', cursor: 'pointer'
       }}
        onClick={() => {setBodyPart(item)

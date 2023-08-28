@@ -50,6 +50,11 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       }
     }
   };
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      searchHandler();
+    }
+  };
 
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
@@ -70,12 +75,14 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           }}
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
+          onKeyDown = {handleKeyPress}
         />
         <Button
+          variant='contained' color='inherit'
           className="search-btn"
           onClick={searchHandler}
           sx={{
-            bgcolor: '#ff2625',
+            bgcolor: 'var(--primary-color)',
             color: '#fff',
             textTransform: 'none',
             width: { lg: '175px', xs: '80px' },

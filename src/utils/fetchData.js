@@ -14,7 +14,13 @@ export const exerciseOptions = {
     }
   };
   
-
+export const BMIOptions = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '56cb403ea8mshd2845f9537a125ap19fdc3jsncd41c97e99ed',
+      'X-RapidAPI-Host': 'fitness-calculator.p.rapidapi.com'
+    }
+};
 
 export const fetchData = async (url, options) => {
      const response = await fetch(url, options)

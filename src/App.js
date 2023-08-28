@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import ExerciseDetail from './Pages/ExerciseDetail'
 import Footer from './Components/Footer'
+import BMICalculator from './Pages/BMICalculator'
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/exercise/:id' element={<ExerciseDetail/>} />
-
+        <Route path="/BmiCalculator" element={<BMICalculator />} />
       </Routes>
       <Footer/>
     </Box>

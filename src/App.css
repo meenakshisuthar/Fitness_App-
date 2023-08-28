@@ -1,30 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+:root {
+  --primary-color: #6f55f2;
+  --heading-color: #132742;
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgba(103, 101, 240, 1) 27%,
+    rgba(141, 141, 235, 1) 85%
+  );
+  --font-name: "Questrial", sans-serif;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 body {
-    font-family: 'Josefin Sans';
-    background-color: #FFFAFB;
+    font-family: var(--font-name);
   }
-  
-  * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  
-  }
-  
-  ::-webkit-scrollbar {
+.logo-img{
+  background-color: var(--primary-color);
+  line-height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
     width: 0px;
-  }  
-  .react-horizontal-scrolling-menu--wrapper {
+}  
+.react-horizontal-scrolling-menu--wrapper {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
-  .detail-image {
+.detail-image {
     width: 729px;
     height: 742px;
-  }
-  
-  .hero-banner-img {
+}
+
+.hero-banner-img {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 150px;
     position: absolute;
     right: 40px;
     top: 0px;
@@ -38,7 +59,7 @@ body {
     width: 300px;
     height: 445px;
     background: #fff;
-    border-top: 4px solid #FF2625;
+    border-top: 4px solid var(--primary-color);
     border-bottom-left-radius: 20px;
     text-decoration: none;
     display: flex;
@@ -64,8 +85,8 @@ body {
   }
   
   .search-btn:hover {
-    color: #FF2625 !important;
-    border: 1px solid #FF2625 !important;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--heading-color) !important;
   }
   
   .exercise-video {
