@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { TextField, Stack, Typography, Button } from '@mui/material';
 import ExerciseRecommendations from './ExerciseRecommendations';
+// import {fetchData, youtubeOptions} from '../utils/fetchData'
 
 const BMICalculator = () => {
-  // const [showExercise, setShowExercise] =  useState('');
+
   const [weight, setWeight] = useState('');
   const [height, setHeight] = useState('');
   const [bmi, setBmi] = useState(null);
@@ -18,7 +19,7 @@ const BMICalculator = () => {
 
   return (
     <Stack  mb="72px" alignItems="center" mt="37px" justifyContent="center" p="20px" gap='20px'>
-      <h2>BMI Calculator</h2>
+     <strong><h1>BMI Calculator</h1></strong> 
       <TextField
           height="76px"
           placeholder="Enter your weight (kg)"

@@ -3,7 +3,10 @@ import { Box, Stack, Typography} from '@mui/material'
 
 const ExerciseVideos = ({name, exerciseVideos}) => {
 
-   if(!exerciseVideos.length) return "Loading..."
+  if (!exerciseVideos || exerciseVideos.length === 0) {
+    return <p>Loading...</p>;
+  }
+  
   return (
     <Box sx={{ marginTop: { lg: '200px', xs: '20px'}}} p='20px' >
       <Typography variant='h3' mb='33px'>

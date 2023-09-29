@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const exerciseData = [
   {
     name: 'Cardio Workout',
@@ -18,11 +19,12 @@ const exerciseData = [
   },
 ];
 
-const ExerciseRecommendations = ({ bmi}) => {
+const ExerciseRecommendations = ({bmi}) => {
+  
   const recommendedExercises = exerciseData.filter(
     (exercise) => bmi >= exercise.bmiRange[0] && bmi <= exercise.bmiRange[1]
   );
-  
+
   return (
     <div>
       <h3>Exercise Recommendations</h3>
@@ -35,8 +37,10 @@ const ExerciseRecommendations = ({ bmi}) => {
             <li key={index}>
               <strong>{exercise.name}</strong>: {exercise.description}
             </li>
+          
           ))}
         </ul>
+        
         </div> 
       )}
     </div>

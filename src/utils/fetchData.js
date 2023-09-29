@@ -1,7 +1,7 @@
 export const exerciseOptions = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '56cb403ea8mshd2845f9537a125ap19fdc3jsncd41c97e99ed',
+      'X-RapidAPI-Key': '8e408a4bc3mshe2079c18f3ca0c2p125accjsn1e71e916d26c',
       'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
     }
   };
@@ -9,18 +9,10 @@ export const exerciseOptions = {
  export const youtubeOptions = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '56cb403ea8mshd2845f9537a125ap19fdc3jsncd41c97e99ed',
+      'X-RapidAPI-Key': '8e408a4bc3mshe2079c18f3ca0c2p125accjsn1e71e916d26c',
       'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
     }
   };
-  
-export const BMIOptions = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '56cb403ea8mshd2845f9537a125ap19fdc3jsncd41c97e99ed',
-      'X-RapidAPI-Host': 'fitness-calculator.p.rapidapi.com'
-    }
-};
 
 export const fetchData = async (url, options) => {
      const response = await fetch(url, options)
